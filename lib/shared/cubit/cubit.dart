@@ -13,7 +13,7 @@ import 'package:news_app/shared/network/remote/dio_helper.dart';
 class NewsCubit extends Cubit<NewsStates> {
   NewsCubit() : super(NewsInitialState());
   int currentIndex = 0;
-
+  DateTime startDate = DateTime.now().subtract(Duration(days: 30));
   List<BottomNavigationBarItem> BottomItems = [
     BottomNavigationBarItem(
         icon: Icon(

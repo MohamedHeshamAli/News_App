@@ -13,7 +13,7 @@ class SearchScreen extends StatelessWidget {
       builder: (context, state) {
         var cubit = NewsCubit.get(context);
         var list = cubit.search;
-        print("buid empty: $isEmpty");
+        print("build empty: $isEmpty");
         return Scaffold(
           appBar: AppBar(
             title: Text("News Search"),
